@@ -1,0 +1,8 @@
+def is_power_of_four(n):
+    if n <= 0:
+        return False
+    if n & (n - 1) != 0:
+        return False
+    return bin(n).count('0') % 2 == 1
+n = int(input())
+print(is_power_of_four(n))
